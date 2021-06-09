@@ -1,0 +1,38 @@
+{
+  "dolphins": [
+    {
+      "id": 1,
+      "name": "Swimming with my best pal",
+      "likes": 5,
+      "image": "./assets/dolphin.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Oh hey there",
+      "likes": 2,
+      "image": "./assets/oh-hi-dolphin.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "I bet that dolphin could jump really high!",
+      "dolphinId": 1
+    },
+    {
+      "id": 2,
+      "content": "He's got a nose for fish!",
+      "dolphinId": 1
+    },
+    {
+      "id": 3,
+      "content": "Those five dolphins look like they're on fire!",
+      "dolphinId": 2
+    },
+    {
+      "id": 4,
+      "content": "EEEeeeEEEeeeEEEeee!",
+      "dolphinId": 1
+    }
+  ]
+}
