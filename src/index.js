@@ -61,6 +61,21 @@ document.addEventListener("DOMContentLoaded", () => {
         dolphinLikes.innerText = `${data.likes} likes` // brought over from 1st deliverable
       })
   })
+
+  // 3rd Deliverable
+  const commentButton = document.querySelector("button.comment-button")
+  commentButton.addEventListener("click", (event) => {
+    event.preventDefault()
+
+    const commentInput = document.querySelector("input.comment-input")
+    const newComment = commentInput.value
+    const newCommentListItem = document.createElement("li")
+    newCommentListItem.innerText = newComment
+
+    // const dolphinComments = document.querySelector("ul.comments") This came from the 1st deliverable
+    dolphinComments.append(newCommentListItem)
+    commentInput.value = ""
+  })
 })
 
 /*
@@ -86,4 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 3rd Deliverable
 - Add a comment (no persistance needed)
+
+- Add event listener to the submit comment button (button with class "comment-button")
+- After the submit occurs
+  - Grab the text out of the comment box
+  - Display the new comment to the DOM to the existing comment section
 */
